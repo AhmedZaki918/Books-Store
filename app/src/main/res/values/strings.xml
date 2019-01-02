@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Books Store</string>
+
+    <!-- Label of the second activity -->
+    <string name="editor_activity_title_new_book">Add a Book</string>
+
+    <!-- Label related  of supplier info -->
+    <string name="supplier_info">Supplier info</string>
+
+    <!-- Phone number of the supplier -->
+    <string name="supplier_phone_number">Phone Number</string>
+
+    <!-- Common attribute of the name of a book and the supplier -->
+    <string name="name">Name</string>
+
+    <!-- Label related  of Book info -->
+    <string name="book_info">Book info</string>
+
+    <!-- The price of the book -->
+    <string name="price">Price</string>
+
+    <!-- The quantity of a book -->
+    <string name="quantity">Qty</string>
+
+    <!-- Label for overflow menu option that inserts fake book data into the app [CHAR LIMIT=20] -->
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+
+    <!-- Label for overflow menu option that deletes all book data in the app [CHAR LIMIT=20] -->
+    <string name="action_delete_all_entries">Delete All Books</string>
+
+    <!-- Label for editor menu option to save book and leave editor [CHAR LIMIT=20] -->
+    <string name="action_save">Save</string>
+
+    <!-- Label for editor overflow menu option that deletes the current book [CHAR LIMIT=20] -->
+    <string name="action_delete">Delete</string>
+</resources>
