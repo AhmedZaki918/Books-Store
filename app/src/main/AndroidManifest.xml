@@ -18,13 +18,17 @@
         </activity>
 
         <activity android:name=".EditorActivity"
-            android:label="@string/editor_activity_title_new_book"
             android:parentActivityName=".CatalogActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".CatalogActivity" />
 
         </activity>
+
+        <provider
+            android:name=".data.BookProvider"
+            android:authorities="com.example.android.booksstore"
+            android:exported="false" />
     </application>
 
 </manifest>

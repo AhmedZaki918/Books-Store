@@ -8,6 +8,23 @@
     tools:context=".EditorActivity">
 
     <!--  Supplier info TextView -->
+    <Button
+        android:id="@+id/subtract"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="304dp"
+        android:text="@string/subtract"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/book_quantity"
+        app:layout_constraintTop_toBottomOf="@+id/book_name" />
+
     <TextView
         android:id="@+id/supplier_info"
         style="@style/TextView"
@@ -25,7 +42,7 @@
         android:layout_marginEnd="8dp"
         android:ems="12"
         android:hint="@string/name"
-        android:inputType="textPersonName"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/supplier_info"
         app:layout_constraintTop_toTopOf="parent" />
@@ -70,10 +87,12 @@
     <EditText
         android:id="@+id/book_price"
         style="@style/EditText"
-        android:layout_marginEnd="177dp"
-        android:ems="4"
+        android:layout_marginEnd="200dp"
+        android:ems="3"
         android:hint="@string/price"
         android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/red"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/supplier_info"
         app:layout_constraintTop_toBottomOf="@+id/book_name" />
@@ -82,16 +101,71 @@
     <EditText
         android:id="@+id/book_quantity"
         style="@style/EditText"
-        android:layout_marginEnd="177dp"
+        android:layout_marginEnd="200dp"
         android:layout_marginBottom="8dp"
-        android:ems="4"
+        android:ems="3"
         android:hint="@string/quantity"
         android:inputType="number"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.393"
         app:layout_constraintStart_toEndOf="@+id/supplier_info"
         app:layout_constraintTop_toBottomOf="@+id/book_price"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.058" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="304dp"
+        android:text="@string/plus"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/book_quantity"
+        app:layout_constraintTop_toBottomOf="@+id/book_name" />
+
+
+    <ImageView
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
+        android:src="@drawable/baseline_call_black_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/supplier_phone"
+        app:layout_constraintTop_toBottomOf="@+id/supplier_name" />
+
+    <TextView
+        android:id="@+id/currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/currency"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/book_price"
+        app:layout_constraintTop_toBottomOf="@+id/book_name" />
+
+    <ImageView
+        android:id="@+id/cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/baseline_add_shopping_cart_black_24"
+        app:layout_constraintEnd_toStartOf="@+id/book_quantity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book_info" />
 
 
 </android.support.constraint.ConstraintLayout>
