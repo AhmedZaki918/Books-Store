@@ -404,14 +404,14 @@ public class EditorActivity extends AppCompatActivity implements
             int price = cursor.getInt(priceColumnIndex);
             int quantity = cursor.getInt(quantityColumnIndex);
             String supplier = cursor.getString(supplierColumnIndex);
-            int phone = cursor.getInt(phoneColumnIndex);
+            String phone = cursor.getString(phoneColumnIndex);
 
             // Update the views on the screen with the values from the database
             mProductEditText.setText(product);
             mPriceEditText.setText(Integer.toString(price));
             mQuantityEditText.setText(Integer.toString(quantity));
             mSupplierEditText.setText(supplier);
-            mPhoneEditText.setText(Integer.toString(phone));
+            mPhoneEditText.setText(phone);
         }
     }
 

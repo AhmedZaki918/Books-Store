@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CatalogActivity">
+    tools:context=".CatalogActivity"
+    android:background="@drawable/lysander_yuen_1344992_unsplash">
 
     <ListView
         android:id="@+id/list"

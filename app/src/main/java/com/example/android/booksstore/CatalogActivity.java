@@ -114,7 +114,7 @@ public class CatalogActivity extends AppCompatActivity implements
         values.put(BookEntry.COLUMN_BOOK_PRICE, 30);
         values.put(BookEntry.COLUMN_BOOK_QUANTITY, 25);
         values.put(BookEntry.COLUMN_BOOK_SUPPLIER, "Ahmed Ali");
-        values.put(BookEntry.COLUMN_BOOK_PHONE, 100544881);
+        values.put(BookEntry.COLUMN_BOOK_PHONE, "01115444887");
 
 
         // Insert a new row for Art into the provider using the ContentResolver.

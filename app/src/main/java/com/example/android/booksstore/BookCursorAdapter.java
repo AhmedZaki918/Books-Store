@@ -5,12 +5,14 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CursorAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.android.booksstore.data.BookContract.BookEntry;
 
@@ -73,6 +75,12 @@ public class BookCursorAdapter extends CursorAdapter {
         String bookName = cursor.getString(nameColumnIndex);
         String bookPrice = cursor.getString(priceColumnIndex);
         final String bookQty = cursor.getString(qtyColumnIndex);
+
+        // If the book name is empty string or null, then use some default text
+        // that says "Unknown", so the TextView isn't blank.
+        if (TextUtils.isEmpty(bookName)) {
+            bookName = context.getString(R.string.unknown_book);
+        }
 
         // Update the TextViews with the attributes for the current book
         nameTextView.setText(bookName);

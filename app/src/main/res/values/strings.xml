@@ -91,5 +91,8 @@
     <!-- Currency -->
     <string name="currency">EGP</string>
 
+    <!-- Unknown book -->
+    <string name="unknown_book">Unknown</string>
+
 
 </resources>

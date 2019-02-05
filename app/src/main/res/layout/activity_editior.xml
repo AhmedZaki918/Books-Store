@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/activity_margin"
-    tools:context=".EditorActivity">
+    tools:context=".EditorActivity"
+    android:background="@drawable/joel_filipe_151692_unsplash">
 
     <!--  Supplier info TextView -->
     <Button
@@ -13,13 +14,11 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="304dp"
         android:text="@string/subtract"
         android:textAlignment="center"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/book_quantity"
@@ -87,7 +86,7 @@
     <EditText
         android:id="@+id/book_price"
         style="@style/EditText"
-        android:layout_marginEnd="200dp"
+        android:layout_marginEnd="205dp"
         android:ems="3"
         android:hint="@string/price"
         android:inputType="numberDecimal"
@@ -119,12 +118,10 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginBottom="304dp"
+        android:layout_marginTop="60dp"
         android:text="@string/plus"
         android:textAlignment="center"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/book_quantity"
         app:layout_constraintTop_toBottomOf="@+id/book_name" />
 
