@@ -8,6 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@android:style/TextAppearance">
+
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
     <!-- Style for EditText -->
     <style name="EditText">
         <item name="android:layout_width">wrap_content</item>

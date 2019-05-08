@@ -27,6 +27,7 @@
             android:fontFamily="sans-serif-medium"
             android:paddingTop="16dp"
             android:text="@string/empty_view_title_text"
+            android:textColor="@color/whiteDark"
             android:textAppearance="?android:textAppearanceMedium" />
 
         <TextView
@@ -39,7 +40,7 @@
             android:paddingTop="8dp"
             android:text="@string/empty_view_subtitle_text"
             android:textAppearance="?android:textAppearanceSmall"
-            android:textColor="#A2AAB0" />
+            android:textColor="@color/whiteDark" />
     </RelativeLayout>
 
     <ImageView
