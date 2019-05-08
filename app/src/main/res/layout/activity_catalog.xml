@@ -42,12 +42,14 @@
             android:textColor="#A2AAB0" />
     </RelativeLayout>
 
-    <TextView
+    <ImageView
         android:id="@+id/add_book"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
+        android:src="@drawable/baseline_add_circle_outline_white_48"
         android:layout_alignParentBottom="true"
-        android:layout_margin="@dimen/fab_margin"
-        android:background="@drawable/baseline_add_black_48" />
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"/>
+
 </RelativeLayout>

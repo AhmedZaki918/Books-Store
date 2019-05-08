@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -39,7 +40,7 @@ public class CatalogActivity extends AppCompatActivity implements
 
     // Find view by ID
     @BindView(R.id.add_book)
-    TextView addBook;
+    ImageView addBook;
 
 
     @Override
