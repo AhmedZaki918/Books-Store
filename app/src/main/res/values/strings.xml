@@ -11,7 +11,7 @@
     <string name="supplier_phone_number">Phone Number</string>
 
     <!-- Common attribute of the name of a book and the supplier -->
-    <string name="name">Name</string>
+    <string name="name">Supplier Name</string>
 
     <!-- Label related  of Book info -->
     <string name="book_info">Book info</string>
@@ -93,6 +93,7 @@
 
     <!-- Unknown book -->
     <string name="unknown_book">Unknown</string>
+    <string name="book_name">Book Name</string>
 
 
 </resources>

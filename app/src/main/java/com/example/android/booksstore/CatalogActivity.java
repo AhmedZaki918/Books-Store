@@ -8,16 +8,15 @@ import android.content.Intent;
 import android.content.Loader;
 import android.database.Cursor;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.example.android.booksstore.data.BookContract.BookEntry;
 
@@ -40,7 +39,7 @@ public class CatalogActivity extends AppCompatActivity implements
 
     // Find view by ID
     @BindView(R.id.add_book)
-    ImageView addBook;
+    FloatingActionButton addBook;
 
 
     @Override
@@ -49,21 +48,15 @@ public class CatalogActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_catalog);
         ButterKnife.bind(this);
 
-
         // Open new activity to add new book
         addBook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
                 // Create new intent to start new activity
                 Intent intent = new Intent(CatalogActivity.this, EditorActivity.class);
                 startActivity(intent);
-
-
             }
         });
-
 
         // Find the ListView which will be populated with the book data
         ListView bookListView = findViewById(R.id.list);

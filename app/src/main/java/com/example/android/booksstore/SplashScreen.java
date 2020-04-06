@@ -1,7 +1,7 @@
 package com.example.android.booksstore;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class SplashScreen extends AppCompatActivity {
@@ -19,7 +19,7 @@ public class SplashScreen extends AppCompatActivity {
             public void run() {
 
                 try {
-                    sleep(2000);
+                    sleep(1000);
                     Intent i = new Intent(getApplicationContext(), CatalogActivity.class);
                     startActivity(i);
                     finish();

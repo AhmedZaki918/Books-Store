@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?><!-- Layout for the list of books -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CatalogActivity"
-    android:background="@drawable/lysander_yuen_1344992_unsplash">
+    android:background="@drawable/lysander3"
+    tools:context=".CatalogActivity">
 
     <ListView
         android:id="@+id/list"
@@ -27,8 +28,8 @@
             android:fontFamily="sans-serif-medium"
             android:paddingTop="16dp"
             android:text="@string/empty_view_title_text"
-            android:textColor="@color/whiteDark"
-            android:textAppearance="?android:textAppearanceMedium" />
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/whiteDark" />
 
         <TextView
             android:id="@+id/empty_subtitle_text"
@@ -43,14 +44,17 @@
             android:textColor="@color/whiteDark" />
     </RelativeLayout>
 
-    <ImageView
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_book"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/baseline_add_circle_outline_white_48"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:layout_marginRight="16dp"/>
+        android:foreground="@drawable/baseline_add_circle_outline_white_48"
+        app:backgroundTint="@android:color/transparent" />
+
 
 </RelativeLayout>
